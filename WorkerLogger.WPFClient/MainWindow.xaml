@@ -1,0 +1,48 @@
+﻿<Window x:Class="WorkerLogger.WPFClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkerLogger.WPFClient"
+        xmlns:views="clr-namespace:WorkerLogger.WPFClient.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <views:MainWindowViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox Grid.Column="0" SelectedItem="{Binding SelectedWorkInformation}" ItemsSource="{Binding WorkInformations}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black" BorderThickness="3" CornerRadius="12" Background="LightBlue" Margin="0" Padding="0" VerticalAlignment="Top">
+                        <StackPanel>
+                            <Border BorderBrush="Green" BorderThickness="5" CornerRadius="5">
+                                <Label Content="{Binding Title}" Padding="10"/>
+                            </Border>
+
+                            <Label Content="{Binding Description}"/>
+                            <Label Content="{Binding TimeSpent}"/>
+                            <Label Content="{Binding CreationTime}"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel Grid.Column="1">
+            <Label Content="Cím" Background="Aqua" Padding="10"/>
+            <TextBox Text="{Binding SelectedWorkInformation.Title}"/>
+            <Label Content="Leírás" Background="Aqua" Padding="10"/>
+            <TextBox Text="{Binding SelectedWorkInformation.Description}"/>
+            <Label Content="Eltöltött idő" Background="Aqua" Padding="10"/>
+            <TextBox Text="{Binding SelectedWorkInformation.TimeSpent}"/>
+            <Button Content="Új" Command="{Binding CreateWorkInformationCommand}" Padding="10" Margin="10"/>
+            <Button Content="Módosít" Command="{Binding EditWorkInformationCommand}" Padding="10" Margin="10"/>
+            <Button Content="Jelen havi óraszám exportálása" Command="{Binding ReportThisMonthCommand}" Padding="10" Margin="10"/>
+        </StackPanel>
+        
+    </Grid>
+</Window>

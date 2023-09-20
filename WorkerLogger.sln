@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerLogger.Endpoint", "WorkerLogger.Endpoint\WorkerLogger.Endpoint.csproj", "{D29649F6-058F-4BB8-888F-811975FDF330}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerLogger.Domain", "WorkerLogger.Domain\WorkerLogger.Domain.csproj", "{F8CA84DB-EB63-4138-A74A-8A45E8DEE7EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerLogger.Application", "WorkerLogger.Application\WorkerLogger.Application.csproj", "{B7FBBC6D-80CD-4F0F-BFB9-B426139A6C1C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerLogger.Infrastructure", "WorkerLogger.Infrastructure\WorkerLogger.Infrastructure.csproj", "{0F76D6D7-85FC-49BC-BE60-7AA210682454}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F5568DA5-4FF9-4229-BC32-67D977571C77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerLogger.WPFClient", "WorkerLogger.WPFClient\WorkerLogger.WPFClient.csproj", "{A066DB20-AD43-4E4F-A60C-D444485B2E25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D29649F6-058F-4BB8-888F-811975FDF330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D29649F6-058F-4BB8-888F-811975FDF330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D29649F6-058F-4BB8-888F-811975FDF330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D29649F6-058F-4BB8-888F-811975FDF330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8CA84DB-EB63-4138-A74A-8A45E8DEE7EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8CA84DB-EB63-4138-A74A-8A45E8DEE7EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8CA84DB-EB63-4138-A74A-8A45E8DEE7EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8CA84DB-EB63-4138-A74A-8A45E8DEE7EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7FBBC6D-80CD-4F0F-BFB9-B426139A6C1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7FBBC6D-80CD-4F0F-BFB9-B426139A6C1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7FBBC6D-80CD-4F0F-BFB9-B426139A6C1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7FBBC6D-80CD-4F0F-BFB9-B426139A6C1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F76D6D7-85FC-49BC-BE60-7AA210682454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F76D6D7-85FC-49BC-BE60-7AA210682454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F76D6D7-85FC-49BC-BE60-7AA210682454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F76D6D7-85FC-49BC-BE60-7AA210682454}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A066DB20-AD43-4E4F-A60C-D444485B2E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A066DB20-AD43-4E4F-A60C-D444485B2E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A066DB20-AD43-4E4F-A60C-D444485B2E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A066DB20-AD43-4E4F-A60C-D444485B2E25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D29649F6-058F-4BB8-888F-811975FDF330} = {F5568DA5-4FF9-4229-BC32-67D977571C77}
+		{F8CA84DB-EB63-4138-A74A-8A45E8DEE7EE} = {F5568DA5-4FF9-4229-BC32-67D977571C77}
+		{B7FBBC6D-80CD-4F0F-BFB9-B426139A6C1C} = {F5568DA5-4FF9-4229-BC32-67D977571C77}
+		{0F76D6D7-85FC-49BC-BE60-7AA210682454} = {F5568DA5-4FF9-4229-BC32-67D977571C77}
+		{A066DB20-AD43-4E4F-A60C-D444485B2E25} = {F5568DA5-4FF9-4229-BC32-67D977571C77}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52DFEFE8-819B-46ED-9E3F-9A2C635CC215}
+	EndGlobalSection
+EndGlobal
